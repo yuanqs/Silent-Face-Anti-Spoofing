@@ -1,12 +1,6 @@
-**中文版**|[English Version](README_EN.md)  
-![静默活体检测](https://github.com/minivision-ai/Silent-Face-Anti-Spoofing/blob/master/images/logo.jpg)  
-# 静默活体检测 (Silent-Face-Anti-Spoofing)   
-该项目为[小视科技](https://www.minivision.cn/)的静默活体检测项目,您可以扫描下方的二维码获取安卓端APK,体验静默活体的检测效果.   
-<img src="https://github.com/minivision-ai/Silent-Face-Anti-Spoofing/blob/master/images/静默活体APK.jpeg" width="200" height="200" align=center />  
-## 更新  
-**2020-07-30:** 开源caffe模型，分享工业级静默活体检测算法技术解析直播视频以及相关文件。
+
 ## 简介
-在本工程中我们开源了活体模型训练架构，数据预处理方法，模型训练和测试脚本以及开源的APK供大家测试使用。  
+在本工程中我们开源了活体模型训练架构，数据预处理方法，模型训练。  
 
 活体检测技术主要是判别机器前出现的人脸是真实还是伪造的，其中借助其他媒介呈现的人脸都可以定义为虚假的人脸，包括打印的纸质照片、电子产品的显示屏幕、硅胶面具、立体的3D人像等。目前主流的活体解决方案分为配合式活体检测和非配合式活体检测（静默活体检测）。配合式活体检测需要用户根据提示完成指定的动作，然后再进行活体校验，静默活体则在用户无感的情况下直接进行活体校验。  
  
@@ -93,13 +87,3 @@ python train.py --device_ids 0  --patch_info your_patch
  ```      
 ## 相关资源  
 [百度网盘](https://pan.baidu.com/s/1u3BPHIEU4GmTti0G3LIDGQ)提取码：6d8q  
-(1)工业级静默活体检测开源算法技术解析[直播回放视频](https://www.bilibili.com/video/BV1qZ4y1T7CH);  
-(2)直播视频中的思维导图文件，存放在files目录下;  
-(3)开源模型的caffemodel，存放在models目录下;  
-
-## 参考  
-- 检测器 [RetinaFace](https://github.com/deepinsight/insightface/tree/master/RetinaFace)  
-
-针对此项目，为了方便开发者们的技术交流，创建了QQ群：1121178835，欢迎加入。  
-
-除了本次开源的静默活体检测算法外，小视科技还拥有多项人脸识别、人体识别相关的自研算法及商用SDK。有兴趣的个人开发者或企业开发者可登录[小视科技Mini-AI开放平台](https://ai.minivision.cn/)了解和联系我们。
