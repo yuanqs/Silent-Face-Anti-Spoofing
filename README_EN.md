@@ -1,13 +1,5 @@
-[中文版](README.md)|**English Version**  
-![Silent-Face-Anti-Spoofing](https://github.com/minivision-ai/Silent-Face-Anti-Spoofing/blob/master/images/logo.jpg)  
-# Silent-Face-Anti-Spoofing 
-
-This project is Silent-Face-Anti-Spoofing belongs to [minivision technology](https://www.minivision.cn/). You can scan the QR code below to get APK and install it on Android side to experience the effect of real time living detection(silent face anti-spoofing detection).   
-<img src="https://github.com/minivision-ai/Silent-Face-Anti-Spoofing/blob/master/images/静默活体APK.jpeg" width="200" height="200" align=center />  
 
 ## Introduction
-
-In this project, we open source the silent face anti-spoofing model with training architecture, data preprocessing method, model training & test script and open source APK for real time testing.  
 
 The main purpose of silent face anti-spoofing detection technology is to judge whether the face in front of the machine is real or fake. The face presented by other media can be defined as false face, including printed paper photos, display screen of electronic products, silicone mask, 3D human image, etc. At present, the mainstream solutions includes cooperative living detection and non cooperative living detection (silent living detection). Cooperative living detection requires the user to complete the specified action according to the prompt, and then carry out the live verification, while the silent live detection directly performs the live verification.  
 
@@ -24,18 +16,12 @@ By using our self-developed model pruning method, the FLOPs of MobileFaceNet is 
 |MiniFASNetV1|0.081G|0.414M|
 |MiniFASNetV2|0.081G|0.435M|
 
-## APK
-### APK source code  
-Open source for Android platform deployment code: https://github.com/minivision-ai/Silent-Face-Anti-Spoofing-APK  
 
-### Demo
-<img src="https://github.com/minivision-ai/Silent-Face-Anti-Spoofing/blob/master/images/demo.gif" width="300" height="400"/>  
  
 ### Performance  
 | Model|FLOPs|Speed| FPR | TPR |comments |
 | :------:|:-----:|:-----:| :----: | :----: | :----: |
-|   APK |84M| 20ms | 1e-5|97.8%| Open Source|
-| High precision model |162M| 40ms| 1e-5 |99.7%| Private |
+|   model |84M| 20ms | 1e-5|97.8%| Open Source|
 
 ### Test Method 
 
@@ -102,11 +88,4 @@ python train.py --device_ids 0  --patch_info your_patch
  ./images/sample Test Images  
  ```
  python test.py --image_name your_image_name
- ```    
-## Reference 
-- Detector [RetinaFace](https://github.com/deepinsight/insightface/tree/master/RetinaFace)  
 
-For this project, in order to facilitate the technical exchange of developers, we created QQ group: 1121178835, welcome to join.  
-
-In addition to the open-source silent living detection algorithm, Minivision technology also has a number of self-developed algorithms and SDK related to face recognition and human body recognition. Interested individual developers or enterprise developers can visit our website: [Mini-AI Open Platform](https://ai.minivision.cn/)
-Welcome to contact us.
