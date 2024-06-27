@@ -21,18 +21,11 @@
 |MiniFASNetV1|0.081G|0.414M|
 |MiniFASNetV2|0.081G|0.435M|
 
-## APK
-### APK源码  
-开源了适用于安卓平台的部署代码：https://github.com/minivision-ai/Silent-Face-Anti-Spoofing-APK  
-
-### Demo
-<img src="https://github.com/minivision-ai/Silent-Face-Anti-Spoofing/blob/master/images/demo.gif" width="300" height="400"/>  
  
 ### 关键指标  
 | Model(input 80x80)|FLOPs|Speed| FPR | TPR |备注 |
 | :------:|:-----:|:-----:| :----: | :----: | :----: |
-|   APK模型 |84M| 20ms | 1e-5|97.8%| 开源|
-| 高精度模型 |162M| 40ms| 1e-5 |99.7%| 未开源 |
+|   模型 |84M| 20ms | 1e-5|97.8%| 开源|
 
 ### 测试方法  
 - 显示信息:速度(ms), 置信度(0~1)以及活体检测结果(真脸or假脸)
